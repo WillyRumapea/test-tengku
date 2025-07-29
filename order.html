@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>!Order!</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">Form Pemesanan</h1>
+    <div class="flex flex-row">
+      <div id="data-order">
+        <form action="" class="border-2 flex flex-col w-64">
+          <label for="">
+            <input class="border-2" type="text" />
+          </label>
+          <label for="">
+            <button id="button-order" class="border-2">+</button>
+          </label>
+          <div id="ordered-list" class="border-2"></div>
+          <label for="">
+            <input class="border-2" id="amount-price" type="number" readonly />
+          </label>
+          <div id="button-container">
+            <button class="border-2 cursor-pointer">cash</button>
+            <button class="border-2 cursor-pointer">cashless</button>
+          </div>
+        </form>
+      </div>
+      <div id="list-menu" class="border w-36 hidden">
+        <h1>daftar makanan</h1>
+        <div class="flex flex-col" id="list-card-menu"></div>
+      </div>
+    </div>
+    <script type="module" src="./js/form-order.js"></script>
+  </body>
+</html>
